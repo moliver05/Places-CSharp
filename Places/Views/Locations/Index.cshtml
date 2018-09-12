@@ -1,8 +1,0 @@
-<h1>Cars For Sale</h1>
-<ul>
-@foreach(var car in Model)
-{
-<li>Make: @car.GetCarMake() | Model: @car.GetModel() | Price: @car.GetPrice() | Miles: @car.GetMiles() | Year: @car.GetYear()</li>
-}
-</ul>
-<a href="/cars/new">Add a new car.</a>

@@ -1,33 +1,48 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using CarDealership.Models;
+using Places.Models;
 
-namespace CarDealership.Controllers
+namespace Places.Controllers
 {
-public class CarsController : Controller
+public class PlaceController : Controller
 {
 
-  [HttpGet("/cars")]
+  [HttpGet("/places")]
   public ActionResult Index()
   {
-    List<Car> allCars = Car.GetAll();
-    return View(allCars);
+    List<Place> allPlace = Place.GetAll();
+    return View(allPlace);
 
   }
-  [HttpGet("/cars/new")]
+
+  [HttpGet("/places/new")]
   public ActionResult CreateForm()
   {
     return View();
   }
 
-  [HttpPost("/cars")]
+  [HttpPost("/places")]
   public ActionResult Create()
   {
-      Car newCar = new Car(Request.Form["car-make"], Request.Form["car-model"], Request.Form["car-price"], Request.Form["car-miles"], Request.Form["car-year"]);
-      newCar.Save();
-      List<Car> allCars = Car.GetAll();
-      return View("Index", allCars);
+      Place newPlace = new Place(Request.Form["city-name"], Request.Form["city-info"], Request.Form["city-image"]);
+      List<Place> allPlace = Place.GetAll();
+      return View("Index", allPlace);
   }
+  [HttpPost("places/delete")]
+  public ActionResult DeleteAll()
+
+  {
+    Place.ClearAll();
+    return View();
+  }
+
+  [HttpGet("/places/{id}")]
+    public ActionResult Details(int id)
+    {
+      Place place = Place.Find(id);
+      return View(place);
+
+    }
  }
 }

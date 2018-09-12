@@ -1,0 +1,9 @@
+/Users/YnahPinedaMercado/Desktop/Places.Solution/Places/bin/Debug/netcoreapp1.1.4/Places.deps.json
+/Users/YnahPinedaMercado/Desktop/Places.Solution/Places/bin/Debug/netcoreapp1.1.4/Places.runtimeconfig.json
+/Users/YnahPinedaMercado/Desktop/Places.Solution/Places/bin/Debug/netcoreapp1.1.4/Places.runtimeconfig.dev.json
+/Users/YnahPinedaMercado/Desktop/Places.Solution/Places/obj/Debug/netcoreapp1.1.4/Places.csproj.CoreCompileInputs.cache
+/Users/YnahPinedaMercado/Desktop/Places.Solution/Places/obj/Debug/netcoreapp1.1.4/Places.AssemblyInfo.cs
+/Users/YnahPinedaMercado/Desktop/Places.Solution/Places/bin/Debug/netcoreapp1.1.4/Places.dll
+/Users/YnahPinedaMercado/Desktop/Places.Solution/Places/bin/Debug/netcoreapp1.1.4/Places.pdb
+/Users/YnahPinedaMercado/Desktop/Places.Solution/Places/obj/Debug/netcoreapp1.1.4/Places.dll
+/Users/YnahPinedaMercado/Desktop/Places.Solution/Places/obj/Debug/netcoreapp1.1.4/Places.pdb
